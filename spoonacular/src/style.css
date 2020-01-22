@@ -1,5 +1,21 @@
 body {
-  background: #f3f3f3; 
+  background: #f3f3f3;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #95A5A6;
+  height: 90px;
+  padding: 30px;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.App-title {
+  font-size: 2em;
 }
 
 .form__input {
@@ -7,16 +23,17 @@ body {
   border: 0;
   border-bottom: solid 2px #2c3e50;
   margin-right: 10px;
+  margin: 1rem;
   letter-spacing: 2px; 
   width: 10%; 
   padding: 0.4rem; 
 }
 
 .form__button {
-  border: solid 2px #e74c3c;
+  border: solid 2px #A3E4D7;
   background: transparent;
   padding: 0.2rem 0.9rem;
-  margin: 0 0.2rem;
+  margin: 1rem;
   border-radius: 1px;
   font-size: 1rem;
   text-transform: uppercase; 
@@ -26,8 +43,84 @@ body {
 
 .recipe__box {
   background: #fff;
-  padding-bottom: 2rem;
+  width: 350px;
+  height: 390px;
+  text-align: center;
   border-radius: 5px;
   box-shadow: -1px 2px 34px -13px rgba(0, 0, 0, 0.75); 
   overflow: hidden; 
+  margin: 10px;
 }
+
+.recipe__box-title {
+  padding: 10px; 
+  text-transform: uppercase;
+  color: #95A5A6;
+  font-size: 1.1rem;
+  padding: 1.8rem 0 0.2rem 0; 
+}
+
+.recipe__button {
+  border: solid 2px #A3E4D7;
+  background: transparent;
+  padding: 0.4rem 0.6rem;
+  margin: 0 0.2rem;
+  border-radius: 1px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 0.7rem;
+}
+
+.recipe__box-img {
+  height: 250px;
+  width: 100%;
+}
+
+.active-recipe {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.active-recipe__img {
+  height: 500px !important;
+}
+
+.active-recipe__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 1rem 0;
+}
+
+.active-recipe__readyInMinutes, .active-recipe__servings {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.active-recipe__readyInMinutes span {
+  text-transform: none;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-left: 5px;
+}
+
+.active-recipe__servings span {
+  text-transform: lowercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #e74c3c;
+  margin-left: 10px;
+}
+
+.active-recipe__button {
+  border: solid 2px #e74c3c;
+  background: transparent;
+  padding: 0.2rem 0.9rem;
+  margin: 0 0.2rem;
+  border-radius: 1px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+

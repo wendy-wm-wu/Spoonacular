@@ -2,13 +2,13 @@ import React from 'react';
 import Recipe from './Recipe';
 
 const Recipes = ({ recipes }) => {
-    return(
+    return (
       <div className="container">
         <div className="row">
-          {recipes.map((recipe, index) => {
+          {recipes.map((recipe) => {
             return (
-              <div className="col-md-4">
-               <Recipe key={index} recipe={recipe} />
+              <div className="col-md-4" key={recipe.title}>
+               <Recipe key={recipe.title} recipe={recipe} />
               </div>
             )
           })}
