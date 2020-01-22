@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../style.css';
 import Form from './Form';
-import Recipe from './Recipe';
+import Recipes from './Recipes'; 
 import { API_KEY } from '../config'; 
 
 class App extends Component {
@@ -27,7 +27,7 @@ class App extends Component {
           <h1 className="App-title">Recipe Search</h1>
         </header>
         <Form getRecipe={this.getRecipe} />
-        {recipes.map((recipe, index) => <Recipe key={index} recipe={recipe} />)}
+        <Recipes recipes={recipes} />
       </div>
     );
   }
